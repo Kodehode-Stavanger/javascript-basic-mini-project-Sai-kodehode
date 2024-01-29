@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Select Rock/Paper/Scissor</h1>
+      <div class="select">
+        <button id="rock-btn" onclick="rockBtn()">Rock ✊</button>
+        <button id="paper-btn" onclick="paperBtn()">Paper ✋</button>
+        <button id="scissor-btn" onclick="scissorBtn()">Scisscor ✌️</button>
+      </div>
+      <div>
+        <div class="user-pc-div">
+          <div class="computeruser">
+            <p>Computer</p>
+            <img
+              src="images/Desktop_computer_clipart_-_Yellow_theme.svg.png"
+              alt="computer-img"
+              class="userpcimage"
+            />
+          </div>
+          <p id="computeroption"></p>
+          <p id="useroption"></p>
+          <div class="computeruser">
+            <p>User</p>
+            <img
+              src="images/minion.png"
+              alt="user-minion"
+              class="userpcimage"
+            />
+          </div>
+        </div>
+      </div>
+      <div class="restartdiv">
+        <p id="userscore">User : 0</p>
+        <p id="computerscore">Computer : 0</p>
+        <button id="restarbtn" onclick="restartPage()">Restart</button>
+      </div>
+    </div>
+  </body>
+</html>
