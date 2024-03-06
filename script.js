@@ -52,7 +52,6 @@ const rockBtn = () => {
   document.getElementById("paper-btn").disabled = true;
   document.getElementById("scissor-btn").disabled = true;
   javaResult.textContent = "";
-  javaResult.textContent = "";
   userOption.textContent = "";
   computerOption.textContent = "";
   setTimeout(() => {
@@ -118,6 +117,7 @@ function play() {
   } else if (userOption.textContent === computerOption.textContent) {
     setTimeout(() => {
       javaResult.textContent = "Draw 😎";
+      javaResult.classList.add("printoutput");
       javaResult.style.backgroundColor = "lightgreen";
     }, 500);
   } else {

@@ -15,12 +15,16 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 90%;
-  padding: 20px;
+  height: 99%;
+  padding: 10px;
+}
+
+.container h1 {
+  font-size: 30px;
 }
 
 .select button {
-  margin: 40px 25px;
+  margin: 0px 10px;
   padding: 5px 10px;
   font-size: 30px;
   cursor: pointer;
@@ -32,8 +36,6 @@ body {
 .select button:hover {
   background-color: #a2df8e;
   color: #112d49;
-  font-size: 32px;
-  font-weight: 900;
 }
 
 #rock-btn:disabled,
@@ -42,8 +44,6 @@ body {
   cursor: none;
   background-color: rgba(194, 163, 163, 0.888);
   color: #a2df8e;
-  font-size: 30px;
-  font-weight: 300;
 }
 
 .userpcimage {
@@ -54,14 +54,18 @@ body {
 
 .user-pc-div {
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
   width: 800px;
 }
 
 #useroption,
 #computeroption {
-  font-size: 80px;
+  width: max-content;
+  height: max-content;
+  font-size: 60px;
+  margin: 0 auto;
 }
 
 .computeruser p {
@@ -73,7 +77,7 @@ body {
 
 .printoutput {
   text-align: center;
-  width: fit-content;
+  height: 40px;
   margin: 0 auto;
 }
 
@@ -82,15 +86,15 @@ body {
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  height: 200px;
+  height: 180px;
 }
 
 #userscore,
 #computerscore {
   color: #112d49;
   font-weight: bolder;
-  font-size: 25px;
-  margin-top: 20px;
+  font-size: 20px;
+  margin-top: 0px;
 }
 
 #restarbtn {
@@ -107,5 +111,30 @@ body {
 #restarbtn:hover {
   background-color: #400a34;
   color: rgb(151, 211, 138);
-  font-size: 25px;
+}
+
+@media (max-width: 800px) {
+  .user-pc-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container h1 {
+    font-size: 20px;
+  }
+  .select button {
+    font-size: 20px;
+  }
+  #rock-btn:disabled,
+  #paper-btn:disabled,
+  #scissor-btn:disabled {
+    font-size: 20px;
+  }
+  #useroption,
+  #computeroption {
+    width: 50px;
+    height: 50px;
+
+    font-size: 40px;
+    margin: 10px auto;
+  }
 }
