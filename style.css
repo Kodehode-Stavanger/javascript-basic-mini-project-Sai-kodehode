@@ -1,0 +1,140 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: cursive;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  background-color: #8d5d8b;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 99%;
+  padding: 10px;
+}
+
+.container h1 {
+  font-size: 30px;
+}
+
+.select button {
+  margin: 0px 10px;
+  padding: 5px 10px;
+  font-size: 30px;
+  cursor: pointer;
+  background-color: #112d49;
+  color: #a2df8e;
+  font-weight: 300;
+}
+
+.select button:hover {
+  background-color: #a2df8e;
+  color: #112d49;
+}
+
+#rock-btn:disabled,
+#paper-btn:disabled,
+#scissor-btn:disabled {
+  cursor: none;
+  background-color: rgba(194, 163, 163, 0.888);
+  color: #a2df8e;
+}
+
+.userpcimage {
+  width: 120px;
+  height: 120px;
+  border: 2px solid green;
+}
+
+.user-pc-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 800px;
+}
+
+#useroption,
+#computeroption {
+  width: max-content;
+  height: max-content;
+  font-size: 60px;
+  margin: 0 auto;
+}
+
+.computeruser p {
+  text-align: center;
+  padding: 10px;
+  font-size: 26px;
+  color: rgb(11, 207, 60);
+}
+
+.printoutput {
+  text-align: center;
+  height: 40px;
+  margin: 0 auto;
+}
+
+.restartdiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 180px;
+}
+
+#userscore,
+#computerscore {
+  color: #112d49;
+  font-weight: bolder;
+  font-size: 20px;
+  margin-top: 0px;
+}
+
+#restarbtn {
+  background-color: rgb(151, 211, 138);
+  margin-top: 30px;
+  padding: 5px 10px;
+  font-weight: bolder;
+  border: none;
+  font-size: larger;
+  color: #163d2d;
+  cursor: pointer;
+}
+
+#restarbtn:hover {
+  background-color: #400a34;
+  color: rgb(151, 211, 138);
+}
+
+@media (max-width: 800px) {
+  .user-pc-div {
+    flex-direction: column;
+    align-items: center;
+  }
+  .container h1 {
+    font-size: 20px;
+  }
+  .select button {
+    font-size: 20px;
+  }
+  #rock-btn:disabled,
+  #paper-btn:disabled,
+  #scissor-btn:disabled {
+    font-size: 20px;
+  }
+  #useroption,
+  #computeroption {
+    width: 50px;
+    height: 50px;
+
+    font-size: 40px;
+    margin: 10px auto;
+  }
+}
